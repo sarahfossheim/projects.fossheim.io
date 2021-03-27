@@ -1,0 +1,8 @@
+---
+layout: layouts/base.njk
+---
+
+{% for project in projects %}
+    <!-- {{project.description | markdownify | safe}} -->
+    {% include 'components/project.njk' %}
+{% endfor %}

@@ -1,0 +1,25 @@
+<h2>{{project.title}}</h2>
+<p>At ______. </p>
+<ul>
+    <li>
+        <a href="#">Project</a>
+    </li>
+    <li>
+        <a href="#">GitHub</a>
+    </li>
+</ul>
+
+<h3>Tech used</h3>
+{% for technology in project.technologies %}
+<p>{{technology}}</p>
+{% endfor %}
+
+<h3>My contrinutions</h3>
+{% for contribution in project.contributions %}
+<p>{{contribution}}</p>
+{% endfor %}
+
+<h3>Project description</h3>
+{{project.description | markdownify | safe}}
+
+<hr />
