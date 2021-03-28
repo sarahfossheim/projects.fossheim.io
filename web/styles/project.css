@@ -135,8 +135,6 @@
     margin: 2rem auto;
 }
 
-
-
 .tutorials {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -184,6 +182,15 @@
     box-shadow: 0 0 0 0.25rem var(--color-main-text-transparent);
 }
 
+.project.other .description p,
+.project .case p {
+    margin-bottom: 2rem;
+}
+
+.project.other .description img {
+    margin-top: -0.5rem;
+}
+
 @media screen and (max-width: 63rem) {
     .tutorials {
         grid-template-columns: 1fr;
@@ -191,5 +198,15 @@
 
     .tutorial {
         margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 35rem) {
+    .project {
+        box-shadow: none !important;
+    }
+
+    .project .info {
+        grid-template-columns: 1fr;
     }
 }

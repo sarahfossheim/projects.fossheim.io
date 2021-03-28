@@ -42,12 +42,27 @@ body {
 }
 
 a {
-    color: var(--color-selection-text);
+    color: var(--color-main-text);
 }
 
 body > header {
     display: block;
     margin: 5rem auto 10rem auto;
+}
+
+body > header p {
+    font-size: 2rem;
+    line-height: 2.75rem;
+}
+
+body > header p a,
+body > footer p a:hover {
+    color: var(--color-selection-text);
+    background-color: var(--color-selection-bg);
+}
+
+body > header p a:hover {
+    text-decoration: none;
 }
 
 body > footer {

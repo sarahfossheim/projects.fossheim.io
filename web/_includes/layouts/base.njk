@@ -19,13 +19,13 @@
   <body>
     <header class="medium">
       <h1>{{general.title}}</h1>
-      <p>{{general.intro}}</p>
+      <p>{{general.intro | markdownify | safe}}</p>
     </header>
 
     <nav class="medium">
       <ul>
         <li><a href="/">All</a></li>
-        <li><a href="/projects">Projects</a></li>
+        <li><a href="/code">Code</a></li>
         <li><a href="/tutorials">Tutorials</a></li>
         <li><a href="/other">Other</a></li>
       </ul>
@@ -36,7 +36,7 @@
     </main>
 
     <footer class="medium">
-      <p>{{general.footer}}</p>
+      <p>{{general.footer | markdownify | safe}}</p>
     </footer>
   </body>
 </html>
