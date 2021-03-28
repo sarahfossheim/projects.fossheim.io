@@ -22,10 +22,12 @@
         0.7rem 0.7rem 0 0 var(--color-brand-tertiary-outline);
 }
 
-.project .info {
+.project .info,
+.project .code-block {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(22.5rem, 1fr));
     column-gap: 2rem;
+    row-gap: 2rem;
     margin-top: 2rem;
 }
 
@@ -98,4 +100,32 @@
 
 .project .description {
     padding-top: 2.25rem;
+}
+
+.project .code-block {
+    margin-bottom: 2rem;
+}
+
+.project .code-block h3 {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.project .code-block pre {
+    background-color: var(--color-main-text-transparent);
+    padding: 1rem;
+    border-radius: 0.2rem;
+}
+
+.project .code-block pre code {
+    white-space: pre-wrap;
+}
+
+.project .code-block .notes {
+    padding-top: 3.5rem;
+}
+
+.project img {
+    max-width: 100%;
+    margin: 2rem auto;
 }

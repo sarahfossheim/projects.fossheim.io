@@ -49,7 +49,7 @@ export default {
       type: 'accessibleImage',
     },
     {
-      type: 'info',
+      type: 'codeBlock',
     },
   ],
 }

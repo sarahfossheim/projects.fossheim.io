@@ -48,7 +48,12 @@ export default {
     },
     {
       name: 'description',
-      title: 'Description',
+      title: 'Description (intro)',
+      type: 'blockContent',
+    },
+    {
+      name: 'case',
+      title: 'Case Study',
       type: 'blockContent',
     },
   ],

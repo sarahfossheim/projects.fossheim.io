@@ -8,6 +8,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 import accessibleImage from './objects/accessibleImage';
 import blockContent from './objects/blockContent';
 import blockContentSimple from './objects/blockContentSimple';
+import codeBlock from './objects/codeBlock';
 import info from './objects/info';
 
 import project from './project';
@@ -32,6 +33,7 @@ export default createSchema({
     accessibleImage,
     blockContent,
     blockContentSimple,
+    codeBlock,
     info,
   ]),
 });
