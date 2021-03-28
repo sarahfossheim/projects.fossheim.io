@@ -14,8 +14,11 @@
     --color-brand-tertiary: #8AE6FB;
     --color-brand-tertiary-outline: #00303A;
 
-    --color-selection-bg: #E2D4FF ;
-    --color-selection-text: #400456;
+    --color-brand-quad: #A4E8A3;
+    --color-brand-quad-outline: #004012;
+
+    --color-selection-bg: #F9B0FF ;
+    --color-selection-text: #6C044F;
 
     --accent-border: linear-gradient(90deg, #FFAAD3, #FF9D7A, #FFDE69, #A4E8A3, #8AE6FB, #E2D4FF);
 }
@@ -36,6 +39,10 @@ body {
 body {
     font-size: 1.5rem;
     font-family: 'Roboto', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: var(--color-selection-text);
 }
 
 body > header {
@@ -85,6 +92,11 @@ nav li a {
 
 nav li a:hover {
     border-image: var(--accent-border) 1;
+}
+
+::selection {
+    background-color: var(--color-selection-bg);
+    color: var(--color-selection-text);
 }
 
 .large {

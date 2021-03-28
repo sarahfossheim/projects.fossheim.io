@@ -129,3 +129,64 @@
     max-width: 100%;
     margin: 2rem auto;
 }
+
+
+
+.tutorials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin: 0 auto;
+}
+
+.project.tutorial {
+    background-color: var(--color-brand-main);
+    box-shadow: 0.7rem 0.7rem 0 0 var(--color-brand-main-outline);
+    margin-bottom: 0;
+}
+
+.project.tutorial:nth-child(2n) {
+    background-color: var(--color-brand-secondary);
+    box-shadow: 0.7rem 0.7rem 0 0 var(--color-brand-secondary-outline);
+}
+
+.project.tutorial:nth-child(3n) {
+    background-color: var(--color-brand-tertiary);
+    box-shadow: 0.7rem 0.7rem 0 0 var(--color-brand-tertiary-outline);
+}
+
+.project.tutorial:nth-child(4n) {
+    background-color: var(--color-brand-quad);
+    box-shadow: 0.7rem 0.7rem 0 0 var(--color-brand-quad-outline);
+}
+
+.project.tutorial h2 a {
+    color: var(--color-main-text);
+}
+
+.project.tutorial h2 a:hover {
+    text-decoration: none;
+}
+
+.project.tutorial .tech {
+    margin-bottom: 2rem;
+}
+
+
+
+.project.other {
+    background-color: var(--color-main-bg);
+    border-color: var(--color-main-text);
+    box-shadow: 0 0 0 0.25rem var(--color-main-text-transparent);
+}
+
+@media screen and (max-width: 63rem) {
+    .tutorials {
+        grid-template-columns: 1fr;
+    }
+
+    .tutorial {
+        margin-bottom: 0;
+    }
+}

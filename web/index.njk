@@ -8,14 +8,14 @@ layout: layouts/base.njk
     {% endfor %}
 </section>
 
-<section class="tutorials">
-    {% for tutorial in tutorials %}
-        {% include 'components/tutorial.njk' %}
-    {% endfor %}
-</section>
-
 <section class="other">
     {% for doc in other %}
         {% include 'components/other.njk' %}
+    {% endfor %}
+</section>
+
+<section class="tutorials large">
+    {% for tutorial in tutorials %}
+        {% include 'components/tutorial.njk' %}
     {% endfor %}
 </section>
