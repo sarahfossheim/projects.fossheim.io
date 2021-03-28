@@ -54,6 +54,39 @@ body > header h1 {
     font-weight: normal;
 }
 
+body > footer p {
+    text-align: center;
+}
+
+nav {
+    display: block;
+    margin: 0 auto 2rem auto;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 2rem;
+}
+
+nav li:last-child {
+    margin-right: 0rem;
+}
+
+nav li a {
+    color: var(--color-main-text);
+    text-decoration: none;
+    border-bottom: 2px solid var(--color-main-text);
+}
+
+nav li a:hover {
+    border-image: var(--accent-border) 1;
+}
+
 .large {
     width: 100rem;
     max-width: 95vw;
