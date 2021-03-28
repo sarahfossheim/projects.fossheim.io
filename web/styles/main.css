@@ -47,7 +47,7 @@ a {
 
 body > header {
     display: block;
-    margin: 5rem auto 10rem auto;
+    margin: 5rem auto 7.5rem auto;
 }
 
 body > header p {
@@ -122,4 +122,18 @@ nav li a:hover {
 .medium {
     width: 80rem;
     max-width: 90vw;
+}
+
+@media screen and (max-width: 35rem) {
+    nav li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    body > header {
+        margin-bottom: 5rem;
+    }
 }
