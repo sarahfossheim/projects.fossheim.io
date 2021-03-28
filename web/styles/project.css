@@ -196,6 +196,12 @@
     margin-bottom: 2rem;
 }
 
+.project.other .description a:hover,
+.project .description a:hover,
+.project .case a:hover {
+    text-decoration: none;
+}
+
 .project.other .description img {
     margin-top: -0.5rem;
 }
