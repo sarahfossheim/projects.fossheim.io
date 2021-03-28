@@ -3,22 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title or metadata.title }}</title>
-    <meta name="description" content="{{ description or metadata.description }}">
-    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    <title>✼ Sarah Fossheim's Projects ✼</title>
+    <meta name="description" content="I know this needs a description for SEO etc but I'm not planning on making this public so won't spend time thinking of a good description, sorry.">
+
+    {% set css %}
+      {% include "../../styles/fonts.css" %}
+      {% include "../../styles/main.css" %}
+      {% include "../../styles/project.css" %}
+    {% endset %}
+    <style>
+      {{ css | cssmin | safe }}
+    </style> 
   </head>
   <body>
-    <header>
-     <h1>Header</h1>
+    <header class="medium">
+      <h1>Header</h1>
+      <p>Intro text</p>
     </header>
 
     <main>
-      <p>Main</p>
       {{ content | safe }}
     </main>
 
     <footer>
-      <p>Footer 2</p>
+      <p>Footer</p>
     </footer>
   </body>
 </html>

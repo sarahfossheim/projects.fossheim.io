@@ -1,0 +1,60 @@
+:root {
+    --color-main-text: #3e3355;
+    --color-main-text-transparent: rgba(62,51,85,0.15);
+    --color-main-bg: #FEFDFC;
+
+    --color-brand-main: #E2D4FF;
+    --color-brand-main-outline: #400356;
+    --color-brand-main-transparent: rgb(226, 212, 255, 0.5);
+
+    --color-brand-secondary: #FFDE69;
+    --color-brand-secondary-outline: #594600;
+    --color-brand-secondary-transparent: rgb(255, 222, 105, 0.4);
+
+    --color-brand-tertiary: #8AE6FB;
+    --color-brand-tertiary-outline: #00303A;
+
+    --color-selection-bg: #E2D4FF ;
+    --color-selection-text: #400456;
+
+    --accent-border: linear-gradient(90deg, #FFAAD3, #FF9D7A, #FFDE69, #A4E8A3, #8AE6FB, #E2D4FF);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 1.4rem;
+    background-color: var(--color-main-bg);
+    color: var(--color-main-text);
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: 'Roboto', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+}
+
+body > header {
+    display: block;
+    margin: 5rem auto 10rem auto;
+}
+
+body > header h1 {
+    margin-bottom: 1rem;
+    font-family: 'SpaceGroteskMedium', 'Roboto', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+.large {
+    width: 100rem;
+    max-width: 95vw;
+}
+
+.medium {
+    width: 80rem;
+    max-width: 90vw;
+}

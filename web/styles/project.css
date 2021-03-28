@@ -1,0 +1,101 @@
+.project {
+    display: block;
+    margin: 0 auto 3rem auto;
+
+    border: 3px solid var(--color-brand-main-outline);
+    border-radius: 3px;
+    box-shadow: 0.7rem 0.7rem 0 -0.2rem var(--color-brand-main),
+        0.7rem 0.7rem 0 0 var(--color-brand-main-outline);
+        
+    padding: 1rem;
+}
+
+.project:nth-child(2n) {
+    border-color: var(--color-brand-secondary-outline);
+    box-shadow: 0.7rem 0.7rem 0 -0.2rem var(--color-brand-secondary),
+        0.7rem 0.7rem 0 0 var(--color-brand-secondary-outline);
+}
+
+.project:nth-child(3n) {
+    border-color: var(--color-brand-tertiary-outline);
+    box-shadow: 0.7rem 0.7rem 0 -0.2rem var(--color-brand-tertiary),
+        0.7rem 0.7rem 0 0 var(--color-brand-tertiary-outline);
+}
+
+.project .info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22.5rem, 1fr));
+    column-gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project h2 {
+    font-family: 'SpaceGroteskBold', 'Roboto', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.project .links {
+    margin: 1rem 0;
+}
+
+.project .links li {
+    font-family: 'SpaceGroteskRegular', 'Roboto', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+
+    display: inline-block;
+    list-style-type: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    letter-spacing: 0.05rem;
+}
+
+.project .links li a {
+    display: block;
+    color: var(--color-main-text);
+    text-decoration: none;
+    border-bottom: 2px solid var(--color-main-text);
+}
+
+.project .links li a:hover {
+    border-image: var(--accent-border) 1;
+}
+
+.project h3 {
+    opacity: 0.75;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.project .tech,
+.project .contributions,
+.project .requirements {
+    margin-top: 0.5rem;
+}
+
+.project .tech li {
+    display: inline-block;
+    list-style-type: none;
+    background-color: var(--color-main-text-transparent);
+    padding: 0.25rem 0.75rem;
+    margin-right: 0.25rem;
+    border-radius: 0.15rem;
+}
+
+.project .contributions li,
+.project .requirements li {
+    display: block;
+    list-style-type: none;
+    background-color: var(--color-brand-main-transparent);
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.project .requirements li {
+    background-color: var(--color-brand-secondary-transparent);
+}
+
+.project .description {
+    padding-top: 2.25rem;
+}

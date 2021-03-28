@@ -1,25 +1,63 @@
-<h2>{{project.title}}</h2>
-<p>At ______. </p>
-<ul>
-    <li>
-        <a href="#">Project</a>
-    </li>
-    <li>
-        <a href="#">GitHub</a>
-    </li>
-</ul>
+<article class="project large center">
+    <header>
+        <h2>{{project.title}}</h2>
+        
+        <ul class="links">
+            {% if project.links.github or project.links.project %}
+                {% if project.links.project %}
+                    <li>
+                        <a href="{{project.links.project}}">🌍 Project page</a>
+                    </li>
+                {% endif %}
+                {% if project.links.github %}
+                    <li>
+                        <a href="{{project.links.github}}">🐱 GitHub</a>
+                    </li>
+                {% endif %}
+            {% else %}
+                <li class="unavailable">
+                    Project not publicly available ☺︎
+                </li>
+            {% endif %}
+        </ul>
+        
+        {% if project.employer %}
+            <p>Made at {{project.employer.name}}.</p>
+            <p>
+                {{project.employer.position}} 
+                from {{project.employer.employment.start}} 
+                to {{project.employer.employment.end}}.
+            </p>
+        {% endif %}
+    </header>
 
-<h3>Tech used</h3>
-{% for technology in project.technologies %}
-<p>{{technology}}</p>
-{% endfor %}
+    <section class="info">
+        <div>
+            <h3>Tech used</h3>
+            <ul class="tech">
+                {% for technology in project.technologies %}
+                    <li>{{technology}}</li>
+                {% endfor %}
+            </ul>
 
-<h3>My contrinutions</h3>
-{% for contribution in project.contributions %}
-<p>{{contribution}}</p>
-{% endfor %}
+            <h3>Requirements</h3>
+            <ul class="requirements">
+                {% for contribution in project.contributions %}
+                    <li>{{contribution}}</li>
+                {% endfor %}
+            </ul>
 
-<h3>Project description</h3>
-{{project.description | markdownify | safe}}
+            <h3>My contrinutions</h3>
+            <ul class="contributions">
+                {% for contribution in project.contributions %}
+                    <li>{{contribution}}</li>
+                {% endfor %}
+            </ul>
+        </div>
 
-<hr />
+        <div class="description">
+            {{project.description | markdownify | safe}}
+        </div>
+    </section>
+</article>
+

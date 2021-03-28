@@ -12,7 +12,10 @@ function processProject(project) {
 }
 
 async function getProjects() {
-    const query = groq`*[_type == "project"]`;
+    const query = groq`*[_type == "project"]{
+        ...,
+        employer->
+      }`;
     const docs = await client.fetch(query).catch(err => console.error(err));
     const output = docs.map(processProject);
     console.log(output);
