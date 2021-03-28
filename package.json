@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "projects.fossheim.io",
+  "version": "1.0.0",
+  "scripts": {
+    "build-studio": "cd studio && npm run build",
+    "build-web": "cd web && npm run build"
+  }
+}

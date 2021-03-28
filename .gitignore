@@ -5,3 +5,5 @@ web/.env
 web/_site
 
 .DS_Store
+
+node_modules
