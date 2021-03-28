@@ -5,12 +5,13 @@ const client = require('../utils/sanityClient.js');
 const serializers = require('../utils/serializers')
 
 function processProject(project) {
-    const caseStudy = project?.case?.map((block) => {
-        if (block._type === 'codeBlock') {
-            block.notes = BlocksToMarkdown(block.notes, { serializers, ...client.config() });
-        }
-        return block;
-      });
+    const caseStudy = project && project.case 
+        ? project.case.map((block) => {
+            if (block._type === 'codeBlock') {
+                block.notes = BlocksToMarkdown(block.notes, { serializers, ...client.config() });
+            }
+            return block;
+        }) : [];
 
     return {
         ...project,

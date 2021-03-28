@@ -14,15 +14,9 @@
     "@sanity/default-login",
     "@sanity/desk-tool",
     "@sanity/color-input",
-    "@sanity/code-input"
+    "@sanity/code-input",
+    "@sanity/vision"
   ],
-  "env": {
-    "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
-    }
-  },
   "parts": [
     {
       "name": "part:@sanity/base/schema",
