@@ -20,7 +20,7 @@
                 </li>
             {% endif %}
         </ul>
-        
+<!--         
         {% if project.employer %}
             <p>Made at {{project.employer.name}}.</p>
             <p>
@@ -28,7 +28,7 @@
                 from {{project.employer.employment.start}} 
                 to {{project.employer.employment.end}}.
             </p>
-        {% endif %}
+        {% endif %} -->
     </header>
 
     <section class="info">
@@ -49,8 +49,8 @@
 
             <h3>My contrinutions</h3>
             <ul class="contributions">
-                {% for contribution in project.contributions %}
-                    <li>{{contribution}}</li>
+                {% for requirement in project.requirements %}
+                    <li>{{requirement}}</li>
                 {% endfor %}
             </ul>
         </div>

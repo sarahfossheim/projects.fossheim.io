@@ -102,6 +102,11 @@
     padding-top: 2.25rem;
 }
 
+.project .description p {
+    margin-bottom: 2rem;
+    padding-right: 3rem;
+}
+
 .project .code-block {
     margin-bottom: 2rem;
 }
@@ -172,8 +177,6 @@
 .project.tutorial .tech {
     margin-bottom: 2rem;
 }
-
-
 
 .project.other {
     background-color: var(--color-main-bg);

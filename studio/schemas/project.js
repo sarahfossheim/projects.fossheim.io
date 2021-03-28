@@ -41,6 +41,12 @@ export default {
       ],
     },
     {
+      name: 'requirements',
+      title: 'Requirements',
+      type: 'array', 
+      of: [{type: 'string'}],
+    },
+    {
       name: 'contributions',
       title: 'Contributions',
       type: 'array', 
