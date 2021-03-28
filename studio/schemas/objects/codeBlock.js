@@ -1,10 +1,10 @@
-import { IoChatboxEllipsesOutline } from 'react-icons/io5';
+import { IoCodeSlash } from 'react-icons/io5';
 
 export default {
   name: 'codeBlock',
   title: 'Code Block',
   type: 'object',
-  icon: IoChatboxEllipsesOutline,
+  icon: IoCodeSlash,
   fields: [
     {
       name: 'position',

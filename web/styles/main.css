@@ -43,6 +43,11 @@ body > header {
     margin: 5rem auto 10rem auto;
 }
 
+body > footer {
+    display: block;
+    margin: 5rem auto 10rem auto;
+}
+
 body > header h1 {
     margin-bottom: 1rem;
     font-family: 'SpaceGroteskMedium', 'Roboto', 'HelveticaNeue', Helvetica, Arial, sans-serif;

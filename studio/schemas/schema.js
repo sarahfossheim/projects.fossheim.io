@@ -14,6 +14,8 @@ import info from './objects/info';
 import project from './project';
 import employers from './employers';
 import links from './links';
+import general from './general';
+import tutorial from './tutorial';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -25,8 +27,10 @@ export default createSchema({
     // The following are document types which will appear
     // in the studio.
     employers,
+    general,
     links,
     project,
+    tutorial,
     
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas

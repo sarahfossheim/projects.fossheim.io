@@ -1,12 +1,23 @@
 import S from '@sanity/desk-tool/structure-builder';
-import { IoFileTrayStackedSharp, IoBusiness, IoLink } from 'react-icons/io5';
+import { IoFileTrayStackedSharp, IoBusiness, IoHome } from 'react-icons/io5';
 
-const hiddenDocTypes = listItem => !['project', 'employer', 'link'].includes(listItem.getId());
+const hiddenDocTypes = listItem => !['project', 'employer', 'link', 'tutorial', 'general'].includes(listItem.getId());
 
 export default () =>
   S.list()
     .title('Content')
     .items([
+      S.listItem()
+        .title('General')
+        .icon(IoHome)
+        .child(
+          S.editor()
+            .id('general')
+            .schemaType('general')
+            .documentId('general')
+            .title('General')
+        ),
+      S.divider(),
       S.listItem()
         .title('Projects')
         .icon(IoFileTrayStackedSharp)

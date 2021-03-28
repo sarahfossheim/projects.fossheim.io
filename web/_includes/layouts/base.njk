@@ -17,16 +17,16 @@
   </head>
   <body>
     <header class="medium">
-      <h1>Header</h1>
-      <p>Intro text</p>
+      <h1>{{general.title}}</h1>
+      <p>{{general.intro}}</p>
     </header>
 
     <main>
       {{ content | safe }}
     </main>
 
-    <footer>
-      <p>Footer</p>
+    <footer class="medium">
+      <p>{{general.footer}}</p>
     </footer>
   </body>
 </html>
