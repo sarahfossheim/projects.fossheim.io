@@ -14,6 +14,15 @@ export default {
         type: 'url',
       },
       {
+        name: 'technologies',
+        title: 'Technologies',
+        type: 'array',
+        of: [{type: 'string'}],
+        options: {
+          layout: 'tags'
+        }
+      },
+      {
         name: 'description',
         title: 'Description',
         type: 'blockContent',

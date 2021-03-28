@@ -13,7 +13,7 @@ import info from './objects/info';
 
 import project from './project';
 import employers from './employers';
-import links from './links';
+import other from './other';
 import general from './general';
 import tutorial from './tutorial';
 
@@ -28,7 +28,7 @@ export default createSchema({
     // in the studio.
     employers,
     general,
-    links,
+    other,
     project,
     tutorial,
     

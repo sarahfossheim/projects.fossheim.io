@@ -1,0 +1,14 @@
+<article class="project large center">
+  <header>
+    <h2><a href="{{tutorial.url}}">{{tutorial.title}}</a></h2>
+  </header>
+  <section>
+    <ul class="tech">
+      {% for technology in tutorial.technologies %}
+          <li>{{technology}}</li>
+      {% endfor %}
+    </ul>
+    {{tutorial.description | markdownify | safe}}
+  </section>
+</article>
+

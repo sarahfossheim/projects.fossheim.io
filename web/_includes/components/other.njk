@@ -1,0 +1,9 @@
+<article class="project large center">
+    <header>
+      <h2>{{doc.title}}</h2>
+    </header>
+    <section>
+      {{doc.body | markdownify | safe}}
+    </section>
+  </article>
+  

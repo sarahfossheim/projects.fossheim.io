@@ -1,0 +1,9 @@
+---
+layout: layouts/base.njk
+---
+
+<section class="tutorials">
+    {% for tutorial in tutorials %}
+        {% include 'components/tutorial.njk' %}
+    {% endfor %}
+</section>
