@@ -124,6 +124,11 @@ nav li a:hover {
     max-width: 90vw;
 }
 
+.small {
+    width: 70rem;
+    max-width: 95%;
+}
+
 @media screen and (max-width: 35rem) {
     nav li {
         display: block;

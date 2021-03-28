@@ -187,6 +187,10 @@
     margin-bottom: 0;
 }
 
+.project .case {
+    margin: 3rem auto 3rem auto;
+}
+
 .project.other .description p,
 .project .case p {
     margin-bottom: 2rem;
