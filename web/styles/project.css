@@ -82,6 +82,7 @@
     padding: 0.25rem 0.75rem;
     margin-right: 0.25rem;
     border-radius: 0.15rem;
+    margin-bottom: 0.5rem;
 }
 
 .project .contributions li,
@@ -180,6 +181,10 @@
     background-color: var(--color-main-bg);
     border-color: var(--color-main-text);
     box-shadow: 0 0 0 0.25rem var(--color-main-text-transparent);
+}
+
+.project.other h2 {
+    margin-bottom: 0;
 }
 
 .project.other .description p,
