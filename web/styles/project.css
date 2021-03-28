@@ -163,6 +163,7 @@
 .project.tutorial:nth-child(4n) {
     background-color: var(--color-brand-quad);
     box-shadow: 0.5rem 0.5rem 0 0 var(--color-brand-quad-outline);
+    border-color: var(--color-brand-quad-outline);
 }
 
 .project.tutorial h2 a {
