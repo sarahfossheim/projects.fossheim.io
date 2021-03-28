@@ -147,23 +147,23 @@
 
 .project.tutorial {
     background-color: var(--color-brand-main);
-    box-shadow: 0.7rem 0.7rem 0 0 var(--color-brand-main-outline);
+    box-shadow: 0.5rem 0.5rem 0 0 var(--color-brand-main-outline);
     margin-bottom: 0;
 }
 
 .project.tutorial:nth-child(2n) {
     background-color: var(--color-brand-secondary);
-    box-shadow: 0.7rem 0.7rem 0 0 var(--color-brand-secondary-outline);
+    box-shadow: 0.5rem 0.5rem 0 0 var(--color-brand-secondary-outline);
 }
 
 .project.tutorial:nth-child(3n) {
     background-color: var(--color-brand-tertiary);
-    box-shadow: 0.7rem 0.7rem 0 0 var(--color-brand-tertiary-outline);
+    box-shadow: 0.5rem 0.5rem 0 0 var(--color-brand-tertiary-outline);
 }
 
 .project.tutorial:nth-child(4n) {
     background-color: var(--color-brand-quad);
-    box-shadow: 0.7rem 0.7rem 0 0 var(--color-brand-quad-outline);
+    box-shadow: 0.5rem 0.5rem 0 0 var(--color-brand-quad-outline);
 }
 
 .project.tutorial h2 a {
